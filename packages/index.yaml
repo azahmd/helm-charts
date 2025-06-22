@@ -3,7 +3,7 @@ entries:
   argocd:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-22T13:31:51.1021209+01:00"
+    created: "2025-06-22T22:04:15.675451+01:00"
     description: A Helm chart for Kubernetes
     digest: d0bd25e62ab0c52d4d7f6790d46461b1a1768a15bfb60c35e1a669b9a0bc71bf
     name: argocd
@@ -14,7 +14,7 @@ entries:
   galaxy:
   - apiVersion: v2
     appVersion: 24.1.1
-    created: "2025-06-22T13:31:51.1150922+01:00"
+    created: "2025-06-22T22:04:15.6963789+01:00"
     dependencies:
     - alias: postgresql
       condition: postgresql.deploy
@@ -56,7 +56,7 @@ entries:
   openstack-cluster:
   - apiVersion: v2
     appVersion: main
-    created: "2025-06-22T13:31:51.1204138+01:00"
+    created: "2025-06-22T22:04:15.7064757+01:00"
     dependencies:
     - alias: addons
       condition: addons.enabled
@@ -71,4 +71,4 @@ entries:
     urls:
     - https://azahmd.github.io/helm-charts/openstack-cluster-0.10.2.tgz
     version: 0.10.2
-generated: "2025-06-22T13:31:51.0987109+01:00"
+generated: "2025-06-22T22:04:15.6619017+01:00"
