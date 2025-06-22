@@ -1,0 +1,4 @@
+owner: azahmd
+git-repo: helm-charts
+package-path: packages
+index-path: index.yaml
