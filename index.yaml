@@ -71,4 +71,15 @@ entries:
     urls:
     - https://azahmd.github.io/helm-charts/packages/openstack-cluster-0.10.2.tgz
     version: 0.10.2
-generated: "2025-06-23T09:11:40.6964264+01:00"
+  test-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-06-23T20:07:21.629161252Z"
+    description: A Helm chart for Kubernetes
+    digest: d2bff4017131f6a59ada7fa1e4232f13e5c6d47a24184664660931b37fa1172c
+    name: test-app
+    type: application
+    urls:
+    - https://github.com/azahmd/helm-charts/releases/download/test-app-0.1.3/test-app-0.1.3.tgz
+    version: 0.1.3
+generated: "2025-06-23T20:07:21.629167253Z"
