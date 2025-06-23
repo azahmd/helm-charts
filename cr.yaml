@@ -4,3 +4,11 @@ index-path: index.yaml
 charts-dir: charts
 skip-existing: true
 release-name-template: "{{ .Name }}-{{ .Version }}"
+
+repositories:
+  - name: postgres-operator
+    url: https://raw.githubusercontent.com/zalando/postgres-operator/master/charts/postgres-operator/
+  - name: cloudve
+    url: https://raw.githubusercontent.com/cloudve/helm-charts/master/
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami
