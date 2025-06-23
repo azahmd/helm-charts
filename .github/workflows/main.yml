@@ -26,7 +26,11 @@ jobs:
         uses: azure/setup-helm@v3
         with:
           version: v3.12.1
-
+      - name: Debug Environment
+        run: |
+        echo "Actor: $GITHUB_ACTOR"
+        echo "Token: ${{ secrets.CHARTS_TOKEN != '' }}"
+        
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
         env:
@@ -34,4 +38,4 @@ jobs:
         with:
           charts_dir: charts
           config: cr.yaml
-          skip_dependencies: true
+        
