@@ -82,4 +82,14 @@ entries:
     urls:
     - https://github.com/azahmd/helm-charts/releases/download/test-app-0.1.3/test-app-0.1.3.tgz
     version: 0.1.3
-generated: "2025-06-23T20:07:21.629167253Z"
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-06-23T20:09:35.603443544Z"
+    description: A Helm chart for Kubernetes
+    digest: 20e22b279d7b1554256b7e153f246dc3d62fd5abd183c5a14b2640a545aed216
+    name: test-app
+    type: application
+    urls:
+    - https://github.com/azahmd/helm-charts/releases/download/test-app-0.1.0/test-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-06-23T20:09:35.603457992Z"
