@@ -26,7 +26,14 @@ jobs:
         uses: azure/setup-helm@v3
         with:
           version: v3.12.1
-        
+
+      - name: Add Helm Repositories
+        run: |
+          helm repo add postgres-operator https://raw.githubusercontent.com/zalando/postgres-operator/master/charts/postgres-operator/
+          helm repo add cloudve https://raw.githubusercontent.com/cloudve/helm-charts/master/
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+          helm repo update
+      
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
         env:
