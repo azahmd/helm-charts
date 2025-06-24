@@ -3,7 +3,7 @@ entries:
   openstack-cluster:
   - apiVersion: v2
     appVersion: main
-    created: "2025-06-24T15:23:29.8554227+01:00"
+    created: "2025-06-24T17:06:56.5113574+01:00"
     dependencies:
     - alias: addons
       condition: addons.enabled
@@ -18,10 +18,21 @@ entries:
     urls:
     - https://azahmd.github.io/helm-charts/openstack-cluster-0.10.2.tgz
     version: 0.10.2
+  test-abc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-06-24T17:06:56.5189982+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 347b224ddc00cc23ce44fbd5c91cc1e2ce6aac4342a218e3a0aabbbf9ae02bc2
+    name: test-abc
+    type: application
+    urls:
+    - https://azahmd.github.io/helm-charts/test-abc-0.1.0.tgz
+    version: 0.1.0
   test-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-24T15:23:29.8648459+01:00"
+    created: "2025-06-24T17:06:56.521906+01:00"
     description: A Helm chart for Kubernetes
     digest: 867cfed54a4776db95d405f118abe6c1b834ba6b8dcf26fb4d6c2262867eb677
     name: test-app
@@ -32,7 +43,7 @@ entries:
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-24T15:23:29.8718853+01:00"
+    created: "2025-06-24T17:06:56.5248212+01:00"
     description: A Helm chart for Kubernetes
     digest: 193daa719f3e4872f5173690d0dcffba1197327d02fbb8a9790c926e63c5ac59
     name: test-chart
@@ -40,4 +51,4 @@ entries:
     urls:
     - https://azahmd.github.io/helm-charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-24T15:23:29.8436058+01:00"
+generated: "2025-06-24T17:06:56.505885+01:00"
