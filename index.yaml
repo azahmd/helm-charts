@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  argocd:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-06-24T21:35:35.064948197Z"
+    description: A Helm chart for Kubernetes
+    digest: 807b9baefe0c36df4b45f58a770ebd4c178c51421b5cf393c0cf56c04a649081
+    name: argocd
+    type: application
+    urls:
+    - https://github.com/azahmd/helm-charts/releases/download/argocd-0.1.0/argocd-0.1.0.tgz
+    version: 0.1.0
   openstack-cluster:
   - apiVersion: v2
     appVersion: main
@@ -51,4 +62,4 @@ entries:
     urls:
     - https://azahmd.github.io/helm-charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-24T17:06:56.505885+01:00"
+generated: "2025-06-24T21:35:35.064957986Z"
