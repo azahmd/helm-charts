@@ -32,6 +32,6 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
         with:
-          charts_dir: packages
+          charts_dir: charts
           config: cr.yaml
         
