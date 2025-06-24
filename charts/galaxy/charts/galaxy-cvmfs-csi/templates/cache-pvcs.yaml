@@ -1,0 +1,30 @@
+{{- if .Values.cvmfscsi.cache.alien.enabled }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ tpl .Values.cvmfscsi.cache.alien.pvc.name $ }}
+  labels:
+    {{- include "galaxy-cvmfs-csi.labels" $ | nindent 4 }}
+spec:
+  storageClassName: {{ .Values.cvmfscsi.cache.alien.pvc.storageClass }}
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: {{ .Values.cvmfscsi.cache.alien.pvc.size }}Mi
+{{ end -}}
+{{- if .Values.cvmfscsi.cache.local.enabled }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ tpl .Values.cvmfscsi.cache.local.pvc.name $ }}
+  labels:
+    {{- include "galaxy-cvmfs-csi.labels" $ | nindent 4 }}
+spec:
+  storageClassName: {{ .Values.cvmfscsi.cache.local.pvc.storageClass }}
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.cvmfscsi.cache.local.pvc.size }}Mi
+{{ end -}}
