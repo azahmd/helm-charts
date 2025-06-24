@@ -1,51 +1,9 @@
 apiVersion: v1
 entries:
-  galaxy:
-  - apiVersion: v2
-    appVersion: 24.1.1
-    created: "2025-06-24T11:51:38.1591863+01:00"
-    dependencies:
-    - alias: postgresql
-      condition: postgresql.deploy
-      name: postgres-operator
-      repository: https://raw.githubusercontent.com/zalando/postgres-operator/master/charts/postgres-operator/
-      tags:
-      - deploy-postgres
-      version: 1.9.0
-    - alias: s3csi
-      condition: s3csi.deploy
-      name: csi-s3
-      repository: https://raw.githubusercontent.com/cloudve/helm-charts/master/
-      tags:
-      - deploy-s3csi
-      version: 0.35.3
-    - alias: cvmfs
-      condition: cvmfs.deploy
-      name: galaxy-cvmfs-csi
-      repository: https://raw.githubusercontent.com/cloudve/helm-charts/master/
-      tags:
-      - deploy-cvmfs
-      version: 2.4.0
-    - alias: rabbitmq
-      condition: rabbitmq.deploy
-      name: rabbitmq-cluster-operator
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - deploy-rabbitmq
-      version: 2.6.12
-    description: Chart for Galaxy, an open, web-based platform for accessible, reproducible,
-      and transparent computational biomedical research.
-    digest: 67b0fb832c2c0d85bc2598e0c83b81b5bf54d2d2cdcfa849a0c8658cc99a9cda
-    icon: https://galaxyproject.org/images/galaxy-logos/galaxy_project_logo_square.png
-    name: galaxy
-    type: application
-    urls:
-    - https://azahmd.github.io/helm-charts/galaxy-5.17.3.tgz
-    version: 5.17.3
   openstack-cluster:
   - apiVersion: v2
     appVersion: main
-    created: "2025-06-24T11:51:38.1664242+01:00"
+    created: "2025-06-24T15:23:29.8554227+01:00"
     dependencies:
     - alias: addons
       condition: addons.enabled
@@ -63,7 +21,7 @@ entries:
   test-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-24T11:51:38.1748893+01:00"
+    created: "2025-06-24T15:23:29.8648459+01:00"
     description: A Helm chart for Kubernetes
     digest: 867cfed54a4776db95d405f118abe6c1b834ba6b8dcf26fb4d6c2262867eb677
     name: test-app
@@ -74,7 +32,7 @@ entries:
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-24T11:51:38.178165+01:00"
+    created: "2025-06-24T15:23:29.8718853+01:00"
     description: A Helm chart for Kubernetes
     digest: 193daa719f3e4872f5173690d0dcffba1197327d02fbb8a9790c926e63c5ac59
     name: test-chart
@@ -82,4 +40,4 @@ entries:
     urls:
     - https://azahmd.github.io/helm-charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-24T11:51:38.1468072+01:00"
+generated: "2025-06-24T15:23:29.8436058+01:00"
